@@ -1,12 +1,12 @@
 [package]
-name = "lrn_rust"
-version = "0.1.0"
+name = "panel"
+version = "0.1.1"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-text_io = "0.1.10"
-colored = "*"
-sqlite = "0.26.0"
-
+text_io = "0.1.10" # user input
+colored = "2.0.0" # colored text on terminal
+serde_json = { version = "1.0.81", default-features = false, features = ["alloc"] } # json parser
+rusqlite = "0.27.0"
